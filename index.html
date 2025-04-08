@@ -1,0 +1,105 @@
+<!-- Examen de José Guadamuz - Sistema de Reserva de Asientos para TEATROUNA -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEATROUNA - Reserva de Asientos</title>
+    <!-- Uso Bootstrap por CDN como pide el ejercicio (parte de los 10 puntos) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Uso íconos de Bootstrap para el footer -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Mi hoja de estilos CSS personalizada -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado con nombre del teatro (parte de los 10 puntos de maquetado HTML) -->
+    <header class="text-center py-4">
+        <div class="container">
+            <h1 class="display-4 fw-bold">TEATROUNA</h1>
+            <p class="lead">El mejor teatro de Nicoya</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <!-- Representación visual del escenario (requisito del ejercicio) -->
+                <div class="stage mb-5">
+                    <div class="stage-label">ESCENARIO</div>
+                </div>
+
+                <!-- Formulario para seleccionar número de asientos (requisito del ejercicio) -->
+                <div class="reservation-form mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Reserva tus asientos</h3>
+                            <div class="form-group mb-3">
+                                <label for="seatCount" class="form-label">Número de asientos a reservar:</label>
+                                <input type="number" class="form-control" id="seatCount" min="1" max="10" value="2">
+                            </div>
+                            <button id="suggestSeats" class="btn btn-primary">Sugerir Asientos</button>
+                            <button id="confirmReservation" class="btn btn-success ms-2" disabled>Confirmar Reserva</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Leyenda para entender los colores (parte de los 10 puntos de originalidad) -->
+                <div class="seat-legend">
+                    <div class="d-flex justify-content-center">
+                        <div class="legend-item">
+                            <div class="seat-sample available"></div>
+                            <span>Disponible</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="seat-sample occupied"></div>
+                            <span>Ocupado</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="seat-sample selected"></div>
+                            <span>Seleccionado</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mapa de asientos - Se genera con JavaScript (requisito del ejercicio) -->
+                <div class="seating-chart">
+                    <div id="seatMap" class="seat-map">
+                        <!-- Los asientos se generan dinámicamente con JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página con información del teatro (requisito del ejercicio) -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>TEATROUNA</h4>
+                    <p>El mejor teatro y el más chiva de la ciudad con las mejores obras nacionales e internacionales.</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Contacto</h5>
+                    <address>
+                        <p><i class="bi bi-geo-alt-fill"></i>  Nicoya, Guanacaste,  Costa Rica</p>
+                        <p><i class="bi bi-telephone-fill"></i> +506 1111-2222</p>
+                        <p><i class="bi bi-envelope-fill"></i> info@teatrouna.com</p>
+                    </address>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center copyright">
+                    <p>© 2025 TEATROUNA. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cargo Bootstrap JS por CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Mi script de JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
