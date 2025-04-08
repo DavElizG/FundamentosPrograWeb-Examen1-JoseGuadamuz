@@ -7,7 +7,8 @@
 **Valor:** 15%, Total de puntos: 100 puntos.  
 **Profesora:** Gloriana Peña Ramírez  
 **Fecha del examen:** 8-04-2024  
-**Hora:** 05:00 p.m.
+**Hora:** 05:00 p.m.  
+**Autor:** José Guadamuz Elizondo  
 
 ## Instrucciones Generales
 Realice cada uno de los siguientes ejercicios utilizando las herramientas aprendidas en clase y conocimientos autodidactas. La programación debe realizarse en JavaScript.
