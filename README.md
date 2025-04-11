@@ -6,7 +6,7 @@
 **Examen:** Examen Parcial I, I Ciclo 2025  
 **Valor:** 15%, Total de puntos: 100 puntos.  
 **Profesora:** Gloriana Peña Ramírez  
-**Fecha del examen:** 8-04-2024  
+**Fecha del examen:** 8-04-2025  
 **Hora:** 05:00 p.m.  
 **Autor:** José Guadamuz Elizondo  
 
